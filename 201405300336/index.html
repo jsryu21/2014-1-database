@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DB Project Main Page!</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+</head>
+<body>
+	<form action="player.php" method="GET">
+		<input type=text name="searchKey">
+		<input type=submit value="선수검색">
+	</form>
+	<form action="top.php" method="GET">
+		옵션 : 순위<input type=number name="rank" value=10>
+		선수이름<input type=text name="name">
+		<input type=submit value="순위보기">
+	</form>
+	<form action="match.php" method="GET">
+		타자 이름 : <input type=text name="batterName">
+		투수 이름 : <input type=text name="pitcherName">
+		<input type=submit value="승부 예측하기">
+	</form>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<form method="post" action="clean_daily.php">
+		<input type=submit value="선수 일자별기록 지우기">
+	</form>
+	<form method="post" action="crawler.php">
+		<input type=submit value="웹 크롤러 돌리기(주의)">
+	</form>
+</body>
+</html>
